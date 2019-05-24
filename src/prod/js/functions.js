@@ -1,11 +1,20 @@
+var fullName = document.getElementById("fullName"),
+email = document.getElementById("email"),
+rePassword = document.getElementById("reentryPassword"),
+password = document.getElementById("password"),
+requiredBar = document.getElementById("requiredBar"),
+requiredList = document.getElementById("requiredList"),
+filledClass = "filled",
+errorClass = "error"
+
 // validation Name
 
-document.getElementById("fullName").onchange = function() { 
+fullName.onchange = function() { 
     this.className = ""
 	if(this.value.length > 0){
-        this.className = "filled-field";
+        this.className = filledClass;
 	}else{
-        this.className = "error-field"
+        this.className = errorClass
 	}
 }
 
@@ -16,78 +25,72 @@ function validateEmail(email) {
     return mail.test(String(email).toLowerCase());
 }
 
-document.getElementById("email").onchange = function() {
+email.onchange = function() {
     this.className = ""
     if (this.value.length > 0 && validateEmail(this.value)){
-        this.className = "filled-field";
+        this.className = filledClass;
     }else{
-		this.className = "error-field"
+		this.className = errorClass
 	}
 }
 
 // Validate Password 
 
 function validatePassword(password) {
-    var validateMinChar = /\w{6,6}/,
-        validateNumber = /\d/,
-        validateUpper = /[A-Z]/;
 
     if (password.value.length > 0){
-        if(validateMinChar.test(String(password.value))){
-            document.getElementById("characters").className = "filled-list"
-        }else{
-            document.getElementById("characters").className = "error-list"
-        }
-        if(validateNumber.test(String(password.value))){
-            document.getElementById("number").className = "filled-list"
-        }else{
-            document.getElementById("number").className = "error-list"
-        }
-        if(validateUpper.test(String(password.value))){
-            document.getElementById("uppercase").className = "filled-list"
-        }else{
-            document.getElementById("uppercase").className = "error-list"
-        }
-        var bar = document.getElementsByClassName("filled-list").length;
+ 
+        var rules = {
+            number: /\d/,
+            characters: /\w{6,6}/,
+            uppercase: /[A-Z]/,
+        };
+        for (var rule in rules) {
+            var regex = rules[rule]
+              document.getElementById(rule).className = (regex.test(password.value)
+            ? filledClass
+            : errorClass
+        )}
+
+        var bar = document.getElementsByClassName(filledClass).length;
         if(bar === 1){
-            var bar = "one-condition"
-            password.className = "error-field"
+            var bar = "oneCondition"
+            password.className = errorClass
         }else if(bar === 2){
-            var bar = "two-condition"
-            password.className = "error-field"
+            var bar = "twoCondition"
+            password.className = errorClass
         }else if(bar === 3){
-            var bar = "three-condition"
-            password.className = "filled-field"
+            var bar = "threeCondition"
+            password.className = filledClass
         }
-        document.getElementById("required-bar").className = bar;
+        requiredBar.className = bar;
     }else{
-        password.className = "error-field";
-        document.getElementById("characters").className = "error-list";
-        document.getElementById("number").className = "error-list";
-        document.getElementById("uppercase").className = "error-list";
-        document.getElementById("required-bar").className = "";
+        requiredList.children[0].className = errorClass;
+        requiredList.children[1].className = errorClass;
+        requiredList.children[2].className = errorClass;
+        requiredBar.className = "";
+        password.className = errorClass;
+        rePassword.value = "";
+        rePassword.className = errorClass;
 
     }
 }
+
 function confirmPassword(rePassword) {
-    var passValue = document.getElementById("password").value;
     if(rePassword.value.length !== 0){
-        if(rePassword.value === passValue){
-            rePassword.className = "filled-field";
+        if(rePassword.value === password.value){
+            rePassword.className = filledClass;
         }else{
-            rePassword.className = "error-field";
+            rePassword.className = errorClass;
         }
     }
 }
 
-document.getElementById("password").onchange = function() {
-    var rePassword = document.getElementById("reentryPassword");
+password.onchange = function() {
     validatePassword(this)
     confirmPassword(rePassword)
 }
 
-// Confirm Password
-
-document.getElementById("reentryPassword").onchange = function() {
+rePassword.onchange = function() {
     confirmPassword(this)
 }
