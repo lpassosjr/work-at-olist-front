@@ -11,7 +11,7 @@ body, html {
   display: block;
 }
 
-.login-box {
+.loginBox {
   position: relative;
   width: 515px;
   background-color: #FFFFFF;
@@ -23,14 +23,14 @@ body, html {
   top: 50%;
 }
 
-.login-box .login-head img.logo {
+.loginBox .loginHead img.logo {
   display: block;
   margin: 0 auto;
   width: 87.34px;
   height: 35px;
 }
 
-.login-box .login-main .title {
+.loginBox .loginMain .title {
   display: block;
   text-align: center;
   color: #312f4f;
@@ -39,7 +39,7 @@ body, html {
   margin: 28px 0 0;
 }
 
-.login-box .login-main .subtitle {
+.loginBox .loginMain .subtitle {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
@@ -48,7 +48,7 @@ body, html {
   display: block;
 }
 
-.login-box .login-main #login-form input {
+.loginBox .loginMain #loginForm input {
   width: 374px;
   height: 42px;
   background-color: #FFFFFF;
@@ -62,19 +62,19 @@ body, html {
   padding: 0 15px;
 }
 
-.login-box .login-main #login-form input.filled-field {
+.loginBox .loginMain #loginForm input.filled {
   border-color: #17D499;
 }
 
-.login-box .login-main #login-form input.error-field {
+.loginBox .loginMain #loginForm input.error {
   border-color: #F79682;
 }
 
-.login-box .login-main #login-form input:focus {
+.loginBox .loginMain #loginForm input:focus {
   outline: none;
 }
 
-.login-box .login-main #login-form label {
+.loginBox .loginMain #loginForm label {
   margin: 24px 0 8px;
   display: block;
   position: relative;
@@ -83,14 +83,14 @@ body, html {
   color: #696D8C;
 }
 
-.login-box .login-main #login-form #required-bar {
+.loginBox .loginMain #loginForm #requiredBar {
   display: block;
   height: 8px;
   position: relative;
   margin: 8px 0 16px;
 }
 
-.login-box .login-main #login-form #required-bar > div {
+.loginBox .loginMain #loginForm #requiredBar > div {
   width: 119.67px;
   height: 8px;
   background-color: #EAEAF4;
@@ -100,27 +100,27 @@ body, html {
   float: left;
 }
 
-.login-box .login-main #login-form #required-bar > div:first-child {
+.loginBox .loginMain #loginForm #requiredBar > div:first-child {
   margin-left: 0;
 }
 
-.login-box .login-main #login-form #required-bar.one-condition > div:first-child {
+.loginBox .loginMain #loginForm #requiredBar.oneCondition > div:first-child {
   background-color: #F79682;
 }
 
-.login-box .login-main #login-form #required-bar.two-condition > div {
+.loginBox .loginMain #loginForm #requiredBar.twoCondition > div {
   background-color: #F7BC1C;
 }
 
-.login-box .login-main #login-form #required-bar.two-condition > div:last-child {
+.loginBox .loginMain #loginForm #requiredBar.twoCondition > div:last-child {
   background-color: #EAEAF4;
 }
 
-.login-box .login-main #login-form #required-bar.three-condition > div {
+.loginBox .loginMain #loginForm #requiredBar.threeCondition > div {
   background-color: #1FE6A8;
 }
 
-.login-box .login-main #login-form #required-list {
+.loginBox .loginMain #loginForm #requiredList {
   display: block;
   position: relative;
   font-size: 16px;
@@ -130,11 +130,11 @@ body, html {
   list-style: none;
 }
 
-.login-box .login-main #login-form #required-list li {
+.loginBox .loginMain #loginForm #requiredList li {
   margin-bottom: 13px;
 }
 
-.login-box .login-main #login-form #required-list li:before {
+.loginBox .loginMain #loginForm #requiredList li:before {
   content: "";
   margin-left: 0;
   position: relative;
@@ -148,15 +148,15 @@ body, html {
   border-radius: 8px;
 }
 
-.login-box .login-main #login-form #required-list li.filled-list:before {
+.loginBox .loginMain #loginForm #requiredList li.filled:before {
   background-color: #1FE6A8;
 }
 
-.login-box .login-main #login-form #required-list li.error-list:before {
+.loginBox .loginMain #loginForm #requiredList li.error:before {
   background-color: #F79682;
 }
 
-.login-box .login-main #login-form #login-button {
+.loginBox .loginMain #loginForm #loginButton {
   background-color: #17d499;
   color: #ffffff;
   width: 374px;
@@ -170,12 +170,12 @@ body, html {
   font-family: "SF Pro Text";
 }
 
-.login-box .login-main #success-box .check-img {
+.loginBox .loginMain #successBox .checkImg {
   margin: 92px auto 0;
   display: block;
 }
 
-.login-box .spinner {
+.loginBox .spinner {
   margin: 32px 0 0;
   width: 374px;
   height: 52px;
@@ -183,7 +183,7 @@ body, html {
   background-color: #17d499;
 }
 
-.login-box .spinner > div {
+.loginBox .spinner > div {
   margin: 21px 0;
   width: 10px;
   height: 10px;
@@ -194,12 +194,12 @@ body, html {
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
-.login-box .spinner .bounce1 {
+.loginBox .spinner .bounce1 {
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
 
-.login-box .spinner .bounce2 {
+.loginBox .spinner .bounce2 {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }

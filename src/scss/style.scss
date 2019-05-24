@@ -10,7 +10,7 @@ body, html{
     position: absolute;
     display: block;
 }
-.login-box{
+.loginBox{
     position: relative;
     width: 515px;
     background-color: #FFFFFF;
@@ -20,7 +20,7 @@ body, html{
     padding: 60px 67px 48px;
     transform: translateY(-50%);
     top: 50%;
-    .login-head{
+    .loginHead{
         img.logo {
             display: block;
             margin: 0 auto;
@@ -28,7 +28,7 @@ body, html{
             height: 35px;
         }
     }
-    .login-main{
+    .loginMain{
         .title{
             display: block;
             text-align: center;
@@ -45,7 +45,7 @@ body, html{
             margin: 21px 63px 36px;
             display: block;
         }
-        #login-form{
+        #loginForm{
             input{
                 width: 374px;
                 height: 42px;
@@ -58,10 +58,10 @@ body, html{
                 line-height: 42px;
                 color: #312F4F;
                 padding: 0 15px;
-                &.filled-field {
+                &.filled {
                     border-color: #17D499;
                 }
-                &.error-field {
+                &.error {
                     border-color: #F79682;
                 }
                 &:focus {
@@ -76,7 +76,7 @@ body, html{
                 line-height: 16px;
                 color: #696D8C;
             }
-            #required-bar{
+            #requiredBar{
                 display: block;
                 height: 8px;
                 position: relative;
@@ -93,22 +93,22 @@ body, html{
                         margin-left: 0;
                     }
                 }
-                &.one-condition > div {
+                &.oneCondition > div {
                     &:first-child{
                         background-color: #F79682;
                     }
                 }
-                &.two-condition > div{
+                &.twoCondition > div{
                     background-color: #F7BC1C;
                     &:last-child{
                         background-color: #EAEAF4;
                     }
                 }
-                &.three-condition > div{
+                &.threeCondition > div{
                     background-color: #1FE6A8;
                 }
             }
-            #required-list{
+            #requiredList{
                 display: block;
                 position: relative;
                 font-size: 16px;
@@ -131,15 +131,15 @@ body, html{
                         top: 1px;
                         border-radius: 8px;
                     }
-                    &.filled-list:before {
+                    &.filled:before {
                         background-color: #1FE6A8;
                     }
-                    &.error-list:before {
+                    &.error:before {
                         background-color: #F79682;
                     }
                 }
             }
-            #login-button{
+            #loginButton{
                 background-color: #17d499;
                 color: #ffffff;
                 width: 374px;
@@ -153,8 +153,8 @@ body, html{
                 font-family: "SF Pro Text";
             }
         }
-        #success-box{
-            .check-img {
+        #successBox{
+            .checkImg {
                 margin: 92px auto 0;
                 display: block;
             }
