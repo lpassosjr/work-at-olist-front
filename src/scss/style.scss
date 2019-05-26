@@ -10,16 +10,17 @@ body, html{
     position: absolute;
     display: block;
 }
-.loginBox{
+#loginBox{
     position: relative;
     width: 515px;
     background-color: #FFFFFF;
     border: 3px solid #F2F2F2;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 80px auto 0;
     padding: 60px 67px 48px;
-    transform: translateY(-50%);
-    top: 50%;
+    &.successBox{
+        margin-top: 86px;
+    }
     .loginHead{
         img.logo {
             display: block;
@@ -151,6 +152,9 @@ body, html{
                 padding: 0;
                 border: unset;
                 font-family: "SF Pro Text";
+                &:disabled {
+                    cursor: not-allowed;
+                }
             }
         }
         #successBox{

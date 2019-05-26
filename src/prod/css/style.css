@@ -11,26 +11,28 @@ body, html {
   display: block;
 }
 
-.loginBox {
+#loginBox {
   position: relative;
   width: 515px;
   background-color: #FFFFFF;
   border: 3px solid #F2F2F2;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 80px auto 0;
   padding: 60px 67px 48px;
-  transform: translateY(-50%);
-  top: 50%;
 }
 
-.loginBox .loginHead img.logo {
+#loginBox.successBox {
+  margin-top: 86px;
+}
+
+#loginBox .loginHead img.logo {
   display: block;
   margin: 0 auto;
   width: 87.34px;
   height: 35px;
 }
 
-.loginBox .loginMain .title {
+#loginBox .loginMain .title {
   display: block;
   text-align: center;
   color: #312f4f;
@@ -39,7 +41,7 @@ body, html {
   margin: 28px 0 0;
 }
 
-.loginBox .loginMain .subtitle {
+#loginBox .loginMain .subtitle {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
@@ -48,7 +50,7 @@ body, html {
   display: block;
 }
 
-.loginBox .loginMain #loginForm input {
+#loginBox .loginMain #loginForm input {
   width: 374px;
   height: 42px;
   background-color: #FFFFFF;
@@ -62,19 +64,19 @@ body, html {
   padding: 0 15px;
 }
 
-.loginBox .loginMain #loginForm input.filled {
+#loginBox .loginMain #loginForm input.filled {
   border-color: #17D499;
 }
 
-.loginBox .loginMain #loginForm input.error {
+#loginBox .loginMain #loginForm input.error {
   border-color: #F79682;
 }
 
-.loginBox .loginMain #loginForm input:focus {
+#loginBox .loginMain #loginForm input:focus {
   outline: none;
 }
 
-.loginBox .loginMain #loginForm label {
+#loginBox .loginMain #loginForm label {
   margin: 24px 0 8px;
   display: block;
   position: relative;
@@ -83,14 +85,14 @@ body, html {
   color: #696D8C;
 }
 
-.loginBox .loginMain #loginForm #requiredBar {
+#loginBox .loginMain #loginForm #requiredBar {
   display: block;
   height: 8px;
   position: relative;
   margin: 8px 0 16px;
 }
 
-.loginBox .loginMain #loginForm #requiredBar > div {
+#loginBox .loginMain #loginForm #requiredBar > div {
   width: 119.67px;
   height: 8px;
   background-color: #EAEAF4;
@@ -100,27 +102,27 @@ body, html {
   float: left;
 }
 
-.loginBox .loginMain #loginForm #requiredBar > div:first-child {
+#loginBox .loginMain #loginForm #requiredBar > div:first-child {
   margin-left: 0;
 }
 
-.loginBox .loginMain #loginForm #requiredBar.oneCondition > div:first-child {
+#loginBox .loginMain #loginForm #requiredBar.oneCondition > div:first-child {
   background-color: #F79682;
 }
 
-.loginBox .loginMain #loginForm #requiredBar.twoCondition > div {
+#loginBox .loginMain #loginForm #requiredBar.twoCondition > div {
   background-color: #F7BC1C;
 }
 
-.loginBox .loginMain #loginForm #requiredBar.twoCondition > div:last-child {
+#loginBox .loginMain #loginForm #requiredBar.twoCondition > div:last-child {
   background-color: #EAEAF4;
 }
 
-.loginBox .loginMain #loginForm #requiredBar.threeCondition > div {
+#loginBox .loginMain #loginForm #requiredBar.threeCondition > div {
   background-color: #1FE6A8;
 }
 
-.loginBox .loginMain #loginForm #requiredList {
+#loginBox .loginMain #loginForm #requiredList {
   display: block;
   position: relative;
   font-size: 16px;
@@ -130,11 +132,11 @@ body, html {
   list-style: none;
 }
 
-.loginBox .loginMain #loginForm #requiredList li {
+#loginBox .loginMain #loginForm #requiredList li {
   margin-bottom: 13px;
 }
 
-.loginBox .loginMain #loginForm #requiredList li:before {
+#loginBox .loginMain #loginForm #requiredList li:before {
   content: "";
   margin-left: 0;
   position: relative;
@@ -148,15 +150,15 @@ body, html {
   border-radius: 8px;
 }
 
-.loginBox .loginMain #loginForm #requiredList li.filled:before {
+#loginBox .loginMain #loginForm #requiredList li.filled:before {
   background-color: #1FE6A8;
 }
 
-.loginBox .loginMain #loginForm #requiredList li.error:before {
+#loginBox .loginMain #loginForm #requiredList li.error:before {
   background-color: #F79682;
 }
 
-.loginBox .loginMain #loginForm #loginButton {
+#loginBox .loginMain #loginForm #loginButton {
   background-color: #17d499;
   color: #ffffff;
   width: 374px;
@@ -170,12 +172,16 @@ body, html {
   font-family: "SF Pro Text";
 }
 
-.loginBox .loginMain #successBox .checkImg {
+#loginBox .loginMain #loginForm #loginButton:disabled {
+  cursor: not-allowed;
+}
+
+#loginBox .loginMain #successBox .checkImg {
   margin: 92px auto 0;
   display: block;
 }
 
-.loginBox .spinner {
+#loginBox .spinner {
   margin: 32px 0 0;
   width: 374px;
   height: 52px;
@@ -183,7 +189,7 @@ body, html {
   background-color: #17d499;
 }
 
-.loginBox .spinner > div {
+#loginBox .spinner > div {
   margin: 21px 0;
   width: 10px;
   height: 10px;
@@ -194,12 +200,12 @@ body, html {
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
-.loginBox .spinner .bounce1 {
+#loginBox .spinner .bounce1 {
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
 
-.loginBox .spinner .bounce2 {
+#loginBox .spinner .bounce2 {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
