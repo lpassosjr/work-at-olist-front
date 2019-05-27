@@ -3,7 +3,7 @@ describe('End to End test', function() {
         const typeName = 'Fulano da Silva',
             typeEmail = 'email@gmail.com',
             typePassword = '1Aqwert';
-        cy.visit('http://127.0.0.1:8080')
+        cy.visit('/index.html')
         cy.get('#fullName')
             .type(typeName)
             .should('have.value', typeName)
@@ -28,7 +28,7 @@ describe('End to End test', function() {
         typeEmail = 'email+gmail.c',
         typePassword = 'Aqwert',
         typeRePassword = '1qwert';
-        cy.visit('http://127.0.0.1:8080')
+        cy.visit('/index.html')
         cy.get('#fullName')
         .type(typeName)
         .should('have.value', typeName)
@@ -50,7 +50,7 @@ describe('End to End test', function() {
         .wait(500)
     })
     it("should test the strengh password", function(){
-        cy.visit('http://127.0.0.1:8080')
+        cy.visit('/index.html')
         cy.get('#password')
             .type('1')
             .get('.oneCondition')
