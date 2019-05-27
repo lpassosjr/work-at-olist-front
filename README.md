@@ -65,6 +65,8 @@ To execute the tests you must run
 npm test
 ```
 
+> After the test ended you can watch the test video in  `./cypress/videos/functions.spec.js`
+
 ## Api Reference
 
 To serve this application it was created an API in Python with Flask library. This API is instantiated in Heroku and can be accessed through the URL [https://python-olist-api.herokuapp.com/signup](https://python-olist-api.herokuapp.com/signup).
