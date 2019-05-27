@@ -113,19 +113,19 @@ body, html {
   margin-left: 0;
 }
 
-#loginBox .loginMain #loginForm #requiredBar.oneCondition > div:first-child {
+#loginBox .loginMain #loginForm #requiredBar.filledCondition-1 > div:first-child {
   background-color: #F79682;
 }
 
-#loginBox .loginMain #loginForm #requiredBar.twoCondition > div {
+#loginBox .loginMain #loginForm #requiredBar.filledCondition-2 > div {
   background-color: #F7BC1C;
 }
 
-#loginBox .loginMain #loginForm #requiredBar.twoCondition > div:last-child {
+#loginBox .loginMain #loginForm #requiredBar.filledCondition-2 > div:last-child {
   background-color: #EAEAF4;
 }
 
-#loginBox .loginMain #loginForm #requiredBar.threeCondition > div {
+#loginBox .loginMain #loginForm #requiredBar.filledCondition-3 > div {
   background-color: #1FE6A8;
 }
 

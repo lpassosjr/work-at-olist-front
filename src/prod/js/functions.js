@@ -76,18 +76,9 @@ function Init(){
                     : errorClass
                 )}
                 var filledItens = document.querySelector('#requiredList');    
-                var bar = filledItens.querySelectorAll('.filled').length;
-                if(bar === 1){
-                    var bar = "oneCondition"
-                    password.className = errorClass
-                }else if(bar === 2){
-                    var bar = "twoCondition"
-                    password.className = errorClass
-                }else if(bar === 3){
-                    var bar = "threeCondition"
-                    password.className = filledClass
-                }
-                requiredBar.className = bar;
+                var filledQuantity = filledItens.querySelectorAll('.filled').length;
+                password.className = filledQuantity === 3 ? filledClass : errorClass;
+                requiredBar.className = "filledCondition-" + filledQuantity;
                 return true
             }else{
                 password.className = errorClass;

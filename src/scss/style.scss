@@ -102,18 +102,18 @@ body, html{
                         margin-left: 0;
                     }
                 }
-                &.oneCondition > div {
+                &.filledCondition-1 > div {
                     &:first-child{
                         background-color: #F79682;
                     }
                 }
-                &.twoCondition > div{
+                &.filledCondition-2 > div{
                     background-color: #F7BC1C;
                     &:last-child{
                         background-color: #EAEAF4;
                     }
                 }
-                &.threeCondition > div{
+                &.filledCondition-3 > div{
                     background-color: #1FE6A8;
                 }
             }
