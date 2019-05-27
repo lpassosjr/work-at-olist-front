@@ -1,104 +1,77 @@
-# Work at Olist Frontend
+![Logo of Olist project](/src/prod/image/olist-logo.svg)
 
-[Olist](https://olist.com/) is a company that offers an integration platform
-for sellers and marketplaces allowing them to sell their products across
-multiple channels.
+# Work at Olist front &middot; [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+> This repo is a test to Olist
 
-The Olist [development team](https://engineering.olist.com/) consists of
-developers who love what they do. Our agile development processes and our
-search for the best development practices provide a great environment for
-professionals who like to create quality software in good company.
+This Application is a simple page to send a form with a strength verification password. 
 
-We are always looking for good programmers who love to improve their work. We
-give preference to small teams with qualified professionals over large teams
-with average professionals.
+## Installing / Getting started
 
-This repository contains a problem used to evaluate the candidate skills.
-It's important to notice that solving the problem is just a
-part of what will be evaluated. We also consider other programming disciplines
-like documentation, testing, commit timeline, design and coding best
-practices.
+You will need to install `Nodejs` and `npm` to run this application .
 
-Hints:
+```shell
+git clone https://github.com/lpassosjr/work-at-olist-front.git
+cd work-at-olist-front
+npm start
+```
 
-* Carefully read the specification to understand all the problem and
-  artifact requirements before starting.
-* Check the recommendations and reference material at the end of this
-  specification.
+After download the repo, you must follow the steps to run http-server.
 
+You should have a return like:
 
-## How to participate
+```shell
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.15.60:8080
+Hit CTRL-C to stop the server
+```
 
-* Make a fork of this repository on Github. If you aren't comfortable with
-   creating a public fork of this project, make a private repository
-   (gitlab offers free private repos) and add developer permission for the
-   user [@tech-hiring](https://gitlab.com/tech-hiring) on project;
-* Follow the instructions on README.md (this file);
-* Deploy your project on a host service (we recommend
-   [Heroku](https://heroku.com) or [Netlify](http://netlify.com/));
-* Apply for the position at our [career page](https://www.99jobs.com/olist)
-   with:
-   * Link to the fork on Github (or gitlab.com);
-   * Link to the project in the deployed host service.
+Your browser must open the application in a new tab. If your browser don't open you can acess with URL [http://127.0.0.1:8080](http://127.0.0.1:8080)
 
+## Developing
 
-## Specification
+### Built With
 
-Today, security is everything, but users still have the bad habit of creating
-accounts with weak passwords, and it is essential that we can offer the user
-ways to keep them safe. So, we must do our best to ensure the safety of our
-users.
+This application was written with HTML5, Javascript(ES5), CSS(SASS) and Python(Flask). 
 
-For this, you should implement a **new account** page, composed of Name, Email
-and Password with a strength measure indicator and Password confirmation. All
-these fields are required.
+### Prerequisites
+
+You will need to install globally: 
+- [node.js](https://nodejs.org/en/)
+- [gulpjs](https://gulpjs.com/docs/en/getting-started/quick-start)
+
+Follow the instructions on their website
 
 
-## Style Guide
+### Setting up Dev
 
-The design of the page can be found in the link below:
+To initialize the project you will need to follow the steps written bellow.
 
-[Front-End Test Style Guide](https://www.figma.com/file/rsSlx8jDHls6nWXziElWTk/olist----front-end-test)
+```shell
+git clone https://github.com/lpassosjr/work-at-olist-front.git
+cd work-at-olist-front
+npm install
+gulp
+```
 
-* It's very important that you build this page exactly as proposed, pixel by
-pixel.
+The repo will be cloned and your dependencies installed.
 
+## Tests
 
-## Instructions
+To execute the tests you must run
 
-* The submit button must be disabled until the form is valid.
-* The Name is required and Email must be a valid email.
-* The invalid input fields should have a border color like the style guide.
-* The valid input fields should have a border color like the style guide.
-* The Password input must make use of the sequence of validation presented in
-  the Style Guide
-* If the form is valid, the submit button should be clickable
-* When the form is submitted, it should present a loading status.
+```shell
+npm test
+```
 
+## Api Reference
 
-## Project Requirements:
+To serve this application it was created an API in Python with Flask library. This API is instantiated in Heroku and can be accessed through the URL [https://python-olist-api.herokuapp.com/signup](https://python-olist-api.herokuapp.com/signup).
+> Note: Because it is a simple API to send data, only the method `POST` its enable;  
 
-* Application must be written in HTML, JavaScript and CSS. You can only make
-  use of a CSS preprocessor.
-* You cannot use any Javascript library or framework with the exception of
-  polyfills.
-* Your page must support all modern browsers and IE 11+.
-* Write the project documentation containing: [Sample](https://github.com/elsewhencode/project-guidelines/blob/master/README.sample.md)
-  * Installing and testing instructions;
-  * Brief description of the work environment used to run this
-    project (Computer/operating system, text editor/IDE, libraries, etc).
-* Every text or code must be in English.
+## Licensing
 
+Copyright (c) 2019 Luiz Roberto Gonçalves dos Passos Junior
 
-## Recommendations
-
-* Write tests!
-* Use [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)), [KISS](https://en.wikipedia.org/wiki/KISS_principle), [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
-* Use programming good practices;
-* Use [git best practices](https://www.git-tower.com/learn/git/ebook/en/command-line/appendix/best-practices),
-  with clear messages (written in English);
-* If you build this with Web Components it will be a plus.
-* Feel free to use any language to serve the page if you need. Using Python,
-  Go or Elixir is a plus.
-
-**Have fun!**
+All licenses in this repository are copyrighted by their respective authors.
