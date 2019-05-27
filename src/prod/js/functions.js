@@ -23,9 +23,14 @@ function Init(){
 
     function validatefullName(fullName){
         fullName.className = ""
-        if(fullName.value.length > 0 && !!fullName.value.trim()){
+        if(fullName.value.length > 0){
+            if(!!fullName.value.trim()){
             fullName.className = filledClass;
             return true
+            }else{
+                fullName.className = errorClass
+                return false
+            }
         }else{
             fullName.className = ''
             return false
@@ -45,6 +50,7 @@ function Init(){
                 return true
             }else{
                 email.className = errorClass;
+                return false
             }
         }else{
             email.className = ''
@@ -168,12 +174,12 @@ function Init(){
         validateElements()
     })
 
-    email.addEventListener('change', function(){
+    email.addEventListener('keyup', function(){
         validateEmail(this)
         validateElements()
     })
 
-    fullName.addEventListener('change', function(){
+    fullName.addEventListener('keyup', function(){
         validatefullName(this)
         validateElements()
     })
