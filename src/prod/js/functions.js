@@ -13,13 +13,28 @@ function Init(){
     successBox = document.getElementById("successBox"),
     loginButton = document.getElementById("loginButton"),
     loadingButton = document.getElementById("loadingButton"),
-    formEventSuccess = new Event("formEvent.success"),
-    formEventError = new Event("formEvent.error"),
+    formEventSuccess = new CustomEvent("formEvent.success"),
+    formEventError = new CustomEvent("formEvent.error"),
     filledClass = "filled",
     errorClass = "error",
     form = document.getElementById("signUpForm");
 
     // Functions
+
+    (function () {
+        if ( typeof window.CustomEvent === "function" ) return false;
+      
+        function CustomEvent ( event, params ) {
+          params = params || { bubbles: false, cancelable: false, detail: null };
+          var evt = document.createEvent( 'CustomEvent' );
+          evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+          return evt;
+         }
+      
+        CustomEvent.prototype = window.Event.prototype;
+      
+        window.CustomEvent = CustomEvent;
+    })();
 
     function validatefullName(fullName){
         fullName.className = ""
