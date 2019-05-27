@@ -15,12 +15,12 @@ cd work-at-olist-front
 npm start
 ```
 
-After download the repo, you must follow the steps to run http-server.
+After download the repo, you must follow the steps to run serve.
 
 You should have a return like:
 
 ```shell
-Starting up http-server, serving ./
+Starting up serve, serving ./
 Available on:
   http://127.0.0.1:8080
   http://192.168.15.60:8080
