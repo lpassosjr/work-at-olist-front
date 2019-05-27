@@ -1,0 +1,28 @@
+{
+  "name": "olist-front",
+  "version": "1.0.0",
+  "description": "This is a Olist FrontEnd test",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run --record --spec './cypress/integration/functions.spec.js' --browser Chrome",
+    "start": "http-server -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpassosjr/work-at-olist-front.git"
+  },
+  "author": "Luiz Roberto Gonçalves dos Passos Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lpassosjr/work-at-olist-front/issues"
+  },
+  "homepage": "https://github.com/lpassosjr/work-at-olist-front#readme",
+  "devDependencies": {
+    "cypress": "^3.3.1",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
