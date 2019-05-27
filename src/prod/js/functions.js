@@ -16,7 +16,8 @@ function Init(){
     formEventSuccess = new Event("formEvent.success"),
     formEventError = new Event("formEvent.error"),
     filledClass = "filled",
-    errorClass = "error";
+    errorClass = "error",
+    form = document.getElementById("signUpForm");
 
     // Functions
 
@@ -128,11 +129,12 @@ function Init(){
 
 
         var ajax = new XMLHttpRequest();
+        var data = new FormData(form);
         
         ajax.open("POST", "https://python-olist-api.herokuapp.com/signup", true);
         ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         
-        ajax.send("email=teste@teste.com");
+        ajax.send(data);
     
         ajax.onreadystatechange = function() {
             
