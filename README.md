@@ -20,14 +20,21 @@ After download the repo, you must follow the steps to run serve.
 You should have a return like:
 
 ```shell
-Starting up serve, serving ./
-Available on:
-  http://127.0.0.1:8080
-  http://192.168.15.60:8080
-Hit CTRL-C to stop the server
+
+   ┌────────────────────────────────────────────────────┐
+   │                                                    │
+   │   Serving!                                         │
+   │                                                    │
+   │   - Local:            http://localhost:7007        │
+   │   - On Your Network:  http://192.168.26.137:7007   │
+   │                                                    │
+   │   Copied local address to clipboard!               │
+   │                                                    │
+   └────────────────────────────────────────────────────┘
+
 ```
 
-Your browser must open the application in a new tab. If your browser don't open you can acess with URL [http://127.0.0.1:8080](http://127.0.0.1:8080)
+Your browser must open the application in a new tab. If your browser don't open you can acess with URL [http://localhost:7007](http://localhost:7007)
 
 ## Developing
 
