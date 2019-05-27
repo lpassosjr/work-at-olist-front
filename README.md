@@ -39,7 +39,6 @@ This application was written with HTML5, Javascript(ES5), CSS(SASS) and Python(F
 
 You will need to install globally: 
 - [node.js](https://nodejs.org/en/)
-- [gulpjs](https://gulpjs.com/docs/en/getting-started/quick-start)
 
 Follow the instructions on their website
 
