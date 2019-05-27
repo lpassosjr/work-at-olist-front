@@ -7,18 +7,18 @@
     <title>SignUp page</title>
 
     <link href="http://db.onlinewebfonts.com/c/4ff6a11cffa6e8559bd96d4fc1cfa275?family=SoleilW01-Regular" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./src/prod/css/style.css">
 </head>
 <body>
     <div class="full">
         <div id="loginBox" class="center">
             <div class="loginHead">
-                <img src="../image/olist-logo.svg" alt="" class="logo">
+                <img src="./src/prod/image/olist-logo.svg" alt="" class="logo">
             </div>
             <div class="loginMain">
                 <div id="loginForm"> 
                     <h1 class="title">Crie sua conta</h1>
-                    <form action="" novalidate>
+                    <form action="" id="signUpForm" novalidate>
                         <label>Nome completo</label>
                         <input type="text" name="fullName" id="fullName" required="required"/>
                         <label>E-mail</label>
@@ -49,13 +49,13 @@
                     </form>
                 </div>
                 <div id="successBox" style="display: none;">
-                    <img src="../image/check-list.svg" alt="" class="checkImg">
+                    <img src="./src/prod/image/check-list.svg" alt="" class="checkImg">
                     <h1 class="title">Tudo certo</h1>
                     <span class="subtitle">Verifique sua caixa de entrada para confirmar seu e-mail.</span>
                 </div>
             </div>
         </div>
     </div>
-    <script src="../js/functions.js"></script>
+    <script src="./src/prod/js/functions.js"></script>
 </body>
 </html>
