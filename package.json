@@ -4,7 +4,7 @@
   "description": "This is a Olist FrontEnd test",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/cypress run --record --spec './cypress/integration/functions.spec.js' --browser Chrome",
+    "test": "node_modules/.bin/cypress run --spec './cypress/integration/functions.spec.js'",
     "start": "http-server -o"
   },
   "repository": {
