@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cypress run --spec './cypress/integration/functions.spec.js'",
     "test:visual": "cypress open",
-    "start": "serve -p 7007"
+    "start": "npx serve -p 7007"
   },
   "repository": {
     "type": "git",
