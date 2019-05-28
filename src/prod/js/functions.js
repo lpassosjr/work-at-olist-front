@@ -21,12 +21,18 @@ function Init(){
 
     // Functions
 
+    function validateFullNameRegex(fullName) {
+        var name = /[a-zA-Z]{3,}\s+[a-zA-Z]/;
+        return name.test(fullName);
+    }
+    
     function validatefullName(fullName){
         fullName.className = ""
+        console.log(typeof(fullName.value))
         if(fullName.value.length > 0){
-            if(!!fullName.value.trim()){
-            fullName.className = filledClass;
-            return true
+            if(validateFullNameRegex(fullName.value) && !!fullName.value.trim()){
+                fullName.className = filledClass;
+                return true
             }else{
                 fullName.className = errorClass
                 return false
