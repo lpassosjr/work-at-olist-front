@@ -16,6 +16,8 @@ gulp.task('sass', function() {
 gulp.task('default', ['sass'], function() {
   gulp.watch(scssFiles, ['sass']);
 });
+
+gulp.task('build', ['sass']);
   
 process.on('uncaughtException', function(e) {
     console.error(e.stack);
